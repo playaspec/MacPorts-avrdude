@@ -1,0 +1,12 @@
+--- Portfile.dist	2017-01-01 19:51:40.000000000 -0500
++++ Portfile	2017-03-10 21:39:02.000000000 -0500
+@@ -26,7 +26,8 @@
+                   port:libelf \
+                   port:readline
+ 
+-patchfiles        patch-stk500v2.diff
++patchfiles        patch-stk500v2.diff \
++		  patch-src-avrdude.conf.in.diff
+ 
+ configure.args    --mandir=${prefix}/share/man \
+                   --disable-parport
